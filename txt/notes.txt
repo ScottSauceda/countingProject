@@ -1,0 +1,34 @@
+Project Due Date: 4 - 30 - 19 (April 30th)
+Topic: Chapter6 - Counting
+
+
+
+    Bring an idea of what to include in the project by next class.
+        
+
+            Include theory. Include main topics. Include review. Any questions related to the topic, you should be able to answer.
+            Include one example of binary search: practical problem (from text book maybe) and then do it
+            Study chapter, including homework, slides, textbooks, etc
+            Discuss main points to include into the topic, formulas, theorems, other information to relate to the class
+            Do examples, typical examples, then slightly different from that one.
+            Challening question we never did in class, go in depth to clarify 
+            Also can use final review
+            Prepare quiz's
+            Try to upload 2 days before so every has chance to look into eachother work 
+            Prep before to be specific 
+            Split time equally beteween 7 groups 
+            c++, java, other features that will help with extra 
+
+            * dont forget to evaluate other groups with good feedback
+
+
+            Rules for Counting
+            Enumeration : mix and match rules
+            Addition rule
+            Multiplacation rule
+            Permutations
+            Combinations
+            Excercises
+
+            4/23 Tuesday no substitute / study group
+            4/26 Friday no substitute / study group
