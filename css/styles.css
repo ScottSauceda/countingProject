@@ -39,9 +39,13 @@ nav {
     padding-top: 1em;
 }
 
-nav ul li {
+nav ul li, footer ul li {
     display: inline;
     text-decoration: none;
+}
+
+footer ul li {
+    padding-right: 2rem;
 }
 
 nav a:link {
@@ -61,18 +65,45 @@ nav a:hover {
 }
 
 main {
+/*    border: 2px solid red;*/
+    color: black;
     width: 100%;
+    min-height: 750px;
+}
+
+main article {
+    margin: 0 auto;
+    padding: 4em;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.intro {
+    clear: both;
+}
+
+.permutation {
+    float: left;
+    width: 40%;
+}
+
+.combination {
+    float: right;
+    width: 40%;
 }
 
 aside {
-    width: 39%;
-    min-height: 300px;
-
+/*    border: 2px solid red;*/
+    color: black;
+    width: 100%;
+    min-height: 650px;
 }
 
 footer {
+    clear: both;
     width: 100%;
     min-height: 100px;
+/*    border: 2px solid red;*/
 }
 
 
