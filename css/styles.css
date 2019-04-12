@@ -78,6 +78,23 @@ main article {
     padding-bottom: 0;
 }
 
+main h2 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#questionsDiv ul li {
+    list-style-type: none;
+    padding-bottom: 1.5em;
+    text-align: left;
+}
+
+
+#answerDiv {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
 .intro {
     clear: both;
 }
