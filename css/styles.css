@@ -21,7 +21,11 @@ body {
 
 header {
     background-color: #000;
-    min-height: 550px;
+/*    min-height: 550px;*/
+}
+
+#questionHeader {
+    min-height: 150px;
 }
 
 header img  {
@@ -95,6 +99,10 @@ main h2 {
     font-size: 2rem;
 }
 
+.questionElement {
+    padding-bottom: 3rem;
+}
+
 .intro {
     clear: both;
 }
@@ -108,6 +116,8 @@ main h2 {
     float: right;
     width: 40%;
 }
+
+
 
 aside {
 /*    border: 2px solid red;*/
