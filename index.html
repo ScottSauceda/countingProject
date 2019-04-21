@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>Chapter 6: Counting</title>
+    <title>Home</title>
     
     <!-- css link -->
     <link href="css/styles.css" rel="stylesheet" type="text/css"/>
@@ -15,76 +14,70 @@
     
 <body>
     <div id="container">
-
+        
+        <!-- header section -->
         <header>
-            
-            <div class="headerText">
-            
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="permutation.html">Permutation</a></li>
-                    <li><a href="combination.html">Combination</a></li>
-                    <li><a href="mixed.html">Mixed</a></li>
-                    <li><a href="cardGame.html">Card Game</a></li>
-                    <li><a href="questions.html">Questions</a></li>
-                </ul>
-            </nav>
-                
+            <div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#" onclick="toggleNav()">Formulas</a>
+                            <ul id="formLink">
+                                <li><a href="counting.html">Counting</a></li>
+                                <li><a href="permutation.html">Permutation</a></li>
+                                <li><a href="combination.html">Combination</a></li>
+                                <li><a href="mixed.html">Mixed</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="cardGame.html">Card Game</a></li>
+                        <li><a href="questions.html">Questions</a></li>
+                    </ul>
+                </nav>        
             </div>
-            
-            <img src="images/ace-blur-card-game-1796794.jpg" alt="cards" />
-            
+            <img src="images/ace-blur-card-game-1796794.jpg" alt="cards" />       
         </header>
         
         <br />
-
-        <main>
-            
-             <h1 class="intro">Intro to Counting</h1>
-            
-            <div class="permutation">
-            
-            
+        
+        <!-- main section -->
+        <main>         
+            <h1>Intro to Counting</h1>
+            <div class="introDivLeft">
             <h2>Order Does Matter</h2>
-            <article>
-                <p>
-                Lorem ipsum dolor amet poutine tumblr craft beer, everyday carry literally pug edison bulb schlitz flannel air plant iceland 8-bit gochujang. Meggings XOXO paleo tacos four dollar toast. Umami celiac aesthetic meditation narwhal hashtag single-origin coffee portland tumblr chicharrones. Leggings pabst salvia taxidermy beard pinterest, fingerstache enamel pin heirloom 8-bit snackwave hashtag. Occupy pug leggings, viral narwhal brunch truffaut tilde vinyl pinterest.
-                </p>
+                <article>
+                    <p>
+                    Lorem ipsum dolor amet poutine tumblr craft beer, everyday carry literally pug edison bulb schlitz flannel air plant iceland 8-bit gochujang. Meggings XOXO paleo tacos four dollar toast. Umami celiac aesthetic meditation narwhal hashtag single-origin coffee portland tumblr chicharrones. Leggings pabst salvia taxidermy beard pinterest, fingerstache enamel pin heirloom 8-bit snackwave hashtag. Occupy pug leggings, viral narwhal brunch truffaut tilde vinyl pinterest.
+                    </p>
 
-                <p>
-                Aesthetic godard kickstarter taiyaki kinfolk forage man bun 90's leggings lomo kitsch try-hard etsy. Offal selfies jean shorts banjo drinking vinegar austin, cray selvage lumbersexual next level umami pitchfork. Coloring book tbh man braid readymade. Farm-to-table shaman quinoa, jianbing venmo slow-carb lyft kombucha before they sold out. Vegan tote bag bushwick, VHS pug aesthetic man bun art party. Shabby chic cardigan VHS succulents.
-                </p>
+                    <p>
+                    Lorem ipsum dolor amet poutine tumblr craft beer, everyday carry literally pug edison bulb schlitz flannel air plant iceland 8-bit gochujang. Meggings XOXO paleo tacos four dollar toast. Umami celiac aesthetic meditation narwhal hashtag single-origin coffee portland tumblr chicharrones. Leggings pabst salvia taxidermy beard pinterest, fingerstache enamel pin heirloom 8-bit snackwave hashtag. Occupy pug leggings, viral narwhal brunch truffaut tilde vinyl pinterest.
+                    </p>
 
-                <p>
-                Pabst microdosing lo-fi photo booth quinoa organic drinking vinegar stumptown single-origin coffee hell of adaptogen twee retro. Pickled pop-up prism synth, vice 8-bit selfies truffaut vinyl chicharrones YOLO food truck. Swag typewriter master cleanse prism vinyl. Vexillologist kinfolk affogato semiotics deep v readymade banh mi organic listicle photo booth woke. Kinfolk meditation butcher plaid tbh, pabst salvia schlitz tumblr craft beer blog heirloom af ramps.
-                </p>
-            </article>
-                
+                    <p>
+                    Lorem ipsum dolor amet poutine tumblr craft beer, everyday carry literally pug edison bulb schlitz flannel air plant iceland 8-bit gochujang. Meggings XOXO paleo tacos four dollar toast. Umami celiac aesthetic meditation narwhal hashtag single-origin coffee portland tumblr chicharrones. Leggings pabst salvia taxidermy beard pinterest, fingerstache enamel pin heirloom 8-bit snackwave hashtag. Occupy pug leggings, viral narwhal brunch truffaut tilde vinyl pinterest.
+                    </p>
+                </article>
             </div>
             
-            <div class="combination">
-            
+            <div class="introDivRight">  
             <h2>Order Does Not Matter</h2>
-            
-            <article>
-                   <p>
-                Lorem ipsum dolor amet poutine tumblr craft beer, everyday carry literally pug edison bulb schlitz flannel air plant iceland 8-bit gochujang. Meggings XOXO paleo tacos four dollar toast. Umami celiac aesthetic meditation narwhal hashtag single-origin coffee portland tumblr chicharrones. Leggings pabst salvia taxidermy beard pinterest, fingerstache enamel pin heirloom 8-bit snackwave hashtag. Occupy pug leggings, viral narwhal brunch truffaut tilde vinyl pinterest.
-                </p>
+                <article>
+                    <p>
+                    Lorem ipsum dolor amet poutine tumblr craft beer, everyday carry literally pug edison bulb schlitz flannel air plant iceland 8-bit gochujang. Meggings XOXO paleo tacos four dollar toast. Umami celiac aesthetic meditation narwhal hashtag single-origin coffee portland tumblr chicharrones. Leggings pabst salvia taxidermy beard pinterest, fingerstache enamel pin heirloom 8-bit snackwave hashtag. Occupy pug leggings, viral narwhal brunch truffaut tilde vinyl pinterest.
+                    </p>
 
-                <p>
-                Aesthetic godard kickstarter taiyaki kinfolk forage man bun 90's leggings lomo kitsch try-hard etsy. Offal selfies jean shorts banjo drinking vinegar austin, cray selvage lumbersexual next level umami pitchfork. Coloring book tbh man braid readymade. Farm-to-table shaman quinoa, jianbing venmo slow-carb lyft kombucha before they sold out. Vegan tote bag bushwick, VHS pug aesthetic man bun art party. Shabby chic cardigan VHS succulents.
-                </p>
+                    <p>
+                    Lorem ipsum dolor amet poutine tumblr craft beer, everyday carry literally pug edison bulb schlitz flannel air plant iceland 8-bit gochujang. Meggings XOXO paleo tacos four dollar toast. Umami celiac aesthetic meditation narwhal hashtag single-origin coffee portland tumblr chicharrones. Leggings pabst salvia taxidermy beard pinterest, fingerstache enamel pin heirloom 8-bit snackwave hashtag. Occupy pug leggings, viral narwhal brunch truffaut tilde vinyl pinterest.
+                    </p>
 
-                <p>
-                Pabst microdosing lo-fi photo booth quinoa organic drinking vinegar stumptown single-origin coffee hell of adaptogen twee retro. Pickled pop-up prism synth, vice 8-bit selfies truffaut vinyl chicharrones YOLO food truck. Swag typewriter master cleanse prism vinyl. Vexillologist kinfolk affogato semiotics deep v readymade banh mi organic listicle photo booth woke. Kinfolk meditation butcher plaid tbh, pabst salvia schlitz tumblr craft beer blog heirloom af ramps.
-                </p>
-            </article>
-                
-            </div>
-                
+                    <p>
+                    Lorem ipsum dolor amet poutine tumblr craft beer, everyday carry literally pug edison bulb schlitz flannel air plant iceland 8-bit gochujang. Meggings XOXO paleo tacos four dollar toast. Umami celiac aesthetic meditation narwhal hashtag single-origin coffee portland tumblr chicharrones. Leggings pabst salvia taxidermy beard pinterest, fingerstache enamel pin heirloom 8-bit snackwave hashtag. Occupy pug leggings, viral narwhal brunch truffaut tilde vinyl pinterest.
+                    </p>
+                </article>     
+            </div>      
         </main>
-
+        
+        <!-- footer section -->
         <footer>
             <ul>
                 <li>Discrete Structures Project</li>
@@ -93,9 +86,9 @@
                 <li>Marcus Sauceda</li>
             </ul>
         </footer>
+    </div> <!-- end div container -->
 
-    </div> 
-
+    <!-- javascript link -->
     <script src="js/index.js" type="text/javascript"></script>
     
 </body>

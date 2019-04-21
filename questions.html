@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>Chapter 6: Counting</title>
+    <title>Questions</title>
     
     <!-- css link -->
     <link href="css/styles.css" rel="stylesheet" type="text/css"/>
@@ -16,39 +15,37 @@
 <body>
     <div id="container">
 
-     <header>
-            
-            <div class="headerText">
-            
-            <nav>
-                <ul>
-                     <li><a href="index.html">Home</a></li>
-                    <li><a href="permutation.html">Permutation</a></li>
-                    <li><a href="combination.html">Combination</a></li>
-                    <li><a href="mixed.html">Mixed</a></li>
-                    <li><a href="cardGame.html">Card Game</a></li>
-                    <li><a href="questions.html">Questions</a></li>
-                </ul>
-            </nav>
-                
-            </div>
-            
-            <h1 style="color: white; font-size: 3rem; padding-bottom: 2rem;">
-                Questions
-            </h1>
-            
+     <header>        
+        <div>      
+          <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" onclick="toggleNav()">Formulas</a>
+                    <ul id="formLink">
+                        <li><a href="counting.html">Counting</a></li>
+                        <li><a href="permutation.html">Permutation</a></li>
+                        <li><a href="combination.html">Combination</a></li>
+                        <li><a href="mixed.html">Mixed</a></li>
+                    </ul>
+                </li>
+                <li><a href="cardGame.html">Card Game</a></li>
+                <li><a href="questions.html">Questions</a></li>
+            </ul>
+          </nav>  
+        </div>     
+        <h1>
+            Questions
+        </h1>      
         </header>
         
         <br />
 
+        <!-- main section -->
         <main id="questionsDiv">
-            
-
         <div class="questionElement">
-            
             <h2>Lorem ipsum dolor amet poutine tumblr craft beer, everyday carry literally pug edison bulb schlitz flannel air plant iceland 8-bit gochujang. Meggings XOXO paleo tacos four dollar toast.</h2>
             
-            <ul id="questionsList">
+            <ul>
                 <li>Lorem ipsum dolor amet poutine tumblr craft beer</li>
                 <li> everyday carry literally pug edison bulb schlitz</li>
                 <li>flannel air plant iceland 8-bit gochujang</li>
@@ -59,19 +56,18 @@
                 Click here for Solution
             </button>
 
+            <!--will be populated by answer on click -->
             <article id="answersDiv1" class="ansDiv">
-            </article>
-            
+            </article>      
         </div>
             
         <br />
-        <br />
+
             
-        <div class="questionElement">
-            
+        <div class="questionElement">    
             <h2>Lorem ipsum dolor amet poutine tumblr craft beer, everyday carry literally pug edison bulb schlitz flannel air plant iceland 8-bit gochujang. Meggings XOXO paleo tacos four dollar toast.</h2>
             
-            <ul id="questionsList">
+            <ul>
                 <li>Lorem ipsum dolor amet poutine tumblr craft beer</li>
                 <li> everyday carry literally pug edison bulb schlitz</li>
                 <li>flannel air plant iceland 8-bit gochujang</li>
@@ -82,19 +78,17 @@
                 Click here for Solution
             </button>
 
+            <!--will be populated by answer on click -->
             <article id="answersDiv2" class="ansDiv">
-            </article>
-            
+            </article>       
         </div>
             
         <br />
-        <br />
             
-        <div class="questionElement">
-            
+        <div class="questionElement">  
             <h2>Lorem ipsum dolor amet poutine tumblr craft beer, everyday carry literally pug edison bulb schlitz flannel air plant iceland 8-bit gochujang. Meggings XOXO paleo tacos four dollar toast.</h2>
             
-            <ul id="questionsList">
+            <ul>
                 <li>Lorem ipsum dolor amet poutine tumblr craft beer</li>
                 <li> everyday carry literally pug edison bulb schlitz</li>
                 <li>flannel air plant iceland 8-bit gochujang</li>
@@ -105,16 +99,15 @@
                 Click here for Solution
             </button>
 
+            <!--will be populated by answer on click -->
             <article id="answersDiv3" class="ansDiv">
-            </article>
-            
+            </article>      
         </div>
             
         <br />
-        <br />
-
         </main>
 
+        <!-- footer section -->
         <footer>
             <ul>
                 <li>Discrete Structures Project</li>
@@ -123,9 +116,9 @@
                 <li>Marcus Sauceda</li>
             </ul>
         </footer>
+    </div> <!-- end div container --> 
 
-    </div> 
-
+    <!-- javascript link -->  
     <script src="js/index.js" type="text/javascript"></script>
     
 </body>
