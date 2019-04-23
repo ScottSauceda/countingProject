@@ -18,17 +18,17 @@
         <!-- header section -->
         <header>
             <div>
+<!--
+                <div class="burger" id="burgerDiv" onclick="toggleNav()">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </div>
+-->
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="#" onclick="toggleNav()">Formulas</a>
-                            <ul id="formLink">
-                                <li><a href="counting.html">Counting</a></li>
-                                <li><a href="permutation.html">Permutation</a></li>
-                                <li><a href="combination.html">Combination</a></li>
-                                <li><a href="mixed.html">Mixed</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="formulas.html">Formulas</a></li>
                         <li><a href="cardGame.html">Card Game</a></li>
                         <li><a href="questions.html">Questions</a></li>
                     </ul>
@@ -40,44 +40,53 @@
         <br />
         
         <!-- main section -->
-        <main>         
-            <h1>Intro to Counting</h1>
-            <div class="introDivLeft">
-            <h2>Order Does Matter</h2>
-                <article>
-                    <p>
-                    Lorem ipsum dolor amet poutine tumblr craft beer, everyday carry literally pug edison bulb schlitz flannel air plant iceland 8-bit gochujang. Meggings XOXO paleo tacos four dollar toast. Umami celiac aesthetic meditation narwhal hashtag single-origin coffee portland tumblr chicharrones. Leggings pabst salvia taxidermy beard pinterest, fingerstache enamel pin heirloom 8-bit snackwave hashtag. Occupy pug leggings, viral narwhal brunch truffaut tilde vinyl pinterest.
-                    </p>
-
-                    <p>
-                    Lorem ipsum dolor amet poutine tumblr craft beer, everyday carry literally pug edison bulb schlitz flannel air plant iceland 8-bit gochujang. Meggings XOXO paleo tacos four dollar toast. Umami celiac aesthetic meditation narwhal hashtag single-origin coffee portland tumblr chicharrones. Leggings pabst salvia taxidermy beard pinterest, fingerstache enamel pin heirloom 8-bit snackwave hashtag. Occupy pug leggings, viral narwhal brunch truffaut tilde vinyl pinterest.
-                    </p>
-
-                    <p>
-                    Lorem ipsum dolor amet poutine tumblr craft beer, everyday carry literally pug edison bulb schlitz flannel air plant iceland 8-bit gochujang. Meggings XOXO paleo tacos four dollar toast. Umami celiac aesthetic meditation narwhal hashtag single-origin coffee portland tumblr chicharrones. Leggings pabst salvia taxidermy beard pinterest, fingerstache enamel pin heirloom 8-bit snackwave hashtag. Occupy pug leggings, viral narwhal brunch truffaut tilde vinyl pinterest.
-                    </p>
-                </article>
-            </div>
-            
-            <div class="introDivRight">  
-            <h2>Order Does Not Matter</h2>
-                <article>
-                    <p>
-                    Lorem ipsum dolor amet poutine tumblr craft beer, everyday carry literally pug edison bulb schlitz flannel air plant iceland 8-bit gochujang. Meggings XOXO paleo tacos four dollar toast. Umami celiac aesthetic meditation narwhal hashtag single-origin coffee portland tumblr chicharrones. Leggings pabst salvia taxidermy beard pinterest, fingerstache enamel pin heirloom 8-bit snackwave hashtag. Occupy pug leggings, viral narwhal brunch truffaut tilde vinyl pinterest.
-                    </p>
-
-                    <p>
-                    Lorem ipsum dolor amet poutine tumblr craft beer, everyday carry literally pug edison bulb schlitz flannel air plant iceland 8-bit gochujang. Meggings XOXO paleo tacos four dollar toast. Umami celiac aesthetic meditation narwhal hashtag single-origin coffee portland tumblr chicharrones. Leggings pabst salvia taxidermy beard pinterest, fingerstache enamel pin heirloom 8-bit snackwave hashtag. Occupy pug leggings, viral narwhal brunch truffaut tilde vinyl pinterest.
-                    </p>
-
-                    <p>
-                    Lorem ipsum dolor amet poutine tumblr craft beer, everyday carry literally pug edison bulb schlitz flannel air plant iceland 8-bit gochujang. Meggings XOXO paleo tacos four dollar toast. Umami celiac aesthetic meditation narwhal hashtag single-origin coffee portland tumblr chicharrones. Leggings pabst salvia taxidermy beard pinterest, fingerstache enamel pin heirloom 8-bit snackwave hashtag. Occupy pug leggings, viral narwhal brunch truffaut tilde vinyl pinterest.
-                    </p>
-                </article>     
-            </div>      
+       <main id="countingDiv">     
+            <h1>Definition of Counting</h1>
+            <p>
+             A subset of combinatorics that usually involves counting possibility.
+             Counting is important because it provides insights into the number of possible outcomes with respect to the number of decision.
+            </p>
+            <br> 
+            <table>
+              <tr>
+                <th>Types</th>
+                <th>Definition</th>
+                <th>When to Use</th>
+                <th>Example</th>
+                <th>Equivalence</th>
+              </tr>
+              <tr>
+                <td>Addition</td>
+                <td>possibility of one outcome associated with two choices is O1 + O2</td>
+                <td>when the two sets of  choices are disjoint(not overlapping)</td>
+                <td>choose one fruit from a pile of citrus fruits and a pile of tropical fruits</td>
+                <td>"OR" operator</td>
+              </tr>
+              <tr>
+                <td>Multiplication</td>
+                <td>possibility of one outcome associated with two choices is O1 x O2</td>
+                <td>all sets of choices has to be applied</td>
+                <td>There are four kinds of grapes, each comes with two colors: grean or purple.Choose one grape</td>
+                <td>"AND" operator</td>
+              </tr>
+              <tr>
+                <td>Permutation</td>
+                <td>possibility of an arrangement of multiple items</td>
+                <td>when the order of the arrangement matters</td>
+                <td>giving 10 different fruits to 10 children</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Combination</td>
+                <td>possibility of an arrangement of multiple items</td>
+                <td>when the order doensn't matter</td>
+                <td>choosing 4 fruits out of 10 fruits</td>
+                <td>-</td>
+              </tr>
+            </table>            
         </main>
-        
-        <!-- footer section -->
+
+        <!-- footer section --> 
         <footer>
             <ul>
                 <li>Discrete Structures Project</li>
@@ -86,7 +95,7 @@
                 <li>Marcus Sauceda</li>
             </ul>
         </footer>
-    </div> <!-- end div container -->
+    </div> <!-- end div container --> 
 
     <!-- javascript link -->
     <script src="js/index.js" type="text/javascript"></script>

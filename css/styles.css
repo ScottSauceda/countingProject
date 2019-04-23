@@ -6,22 +6,33 @@
     header
     header img
     header h1
+    ul li
     nav
     header nav a:link, header nav a:visited
     header nav a:hover
-    ul li
+    .burger
+    .burger:hover
+    .burger-line
     main
     main h2
     main article
     aside
     footer
     footer ul li
-    .intro
-    .permutation
-    .combination
+    .introDivLeft
+    .introDivRight
+    #countingDiv
+    #countingDivTable
+    #countingDiv table, th, td
+    #cardGame p
+    #cardGame table
+    #cardGame img
     #questionsDiv ul li
     #answerDiv
     .questionElement
+    
+    @media query
+    .burger
 */
 
 body {
@@ -52,7 +63,7 @@ header {
 
 header img  {
     width: 100%;
-    height: 550px;
+    height: 530px;
     filter: sepia(30%);
 }
 
@@ -62,6 +73,14 @@ header h1 {
     padding-bottom: 2rem;
 }
 
+/*
+    applies to all unordered list
+*/
+
+ul li {
+    display: inline;
+    text-decoration: none;
+}
 
 /*
     nav section
@@ -85,38 +104,34 @@ header nav a:hover {
     color: silver;
 }
 
-
-/*
-    applies to all unordered list
-*/
-
-ul li {
-    display: inline;
-    text-decoration: none;
-}
-
-/*
-
-    applies to formula list
-
-*/
-
-#formLink {
+.burger {
+/*    background-color: white;*/
     visibility: hidden;
+    float: right; /* position burger ar right */
+    border-radius: 5px; /* slightly rounded corners */
+    border: 2px solid #222; /* thin dark gray border */
+    cursor: pointer; /* like a button on mouseover */
+    width: 35px; /* not too big, cuz it's a "buttion" */
+    text-align: center; /* for centering burger lines */
+    padding: 3px;  /* inset the burger lines */
+    margin-right: 1em; /* space around burger */
+    margin-bottom: 2em;
     position: absolute;
-    width: 40%;
-    z-index: 5;
-    left: 60vh;
-    text-align: left;
+    top: 10px;
+    right: 1px;
+    z-index: 10;
 }
 
-#formLink li {
-    display: block;
-    padding: 10px;
-    width: 50%;
-    background-color: #000;
+.burger:hover {
+    background-color: silver;
 }
 
+.burger-line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px;
+}
 
 /*
     main section
@@ -125,7 +140,7 @@ ul li {
 main {
     color: black;
     width: 100%;
-    min-height: 750px;
+    min-height: 650px;
 }
 
 main h2 {
@@ -140,19 +155,9 @@ main article {
     padding-bottom: 0;
 }
 
-main .div1 {
-/*    font-weight: bold;*/
-}
-
-main .div2 {
-/*    color: green;*/
-}
-
-
 /*
     aside section
 */
-
 aside {
     color: black;
     width: 100%;
@@ -179,33 +184,18 @@ footer ul li {
     index page
 */
 
-
-
-.introDivLeft {
-    float: left;
-    width: 50%;
-}
-
-.introDivRight {
-    float: right;
-    width: 50%;
-}
-
-/*
-    counting page
-*/
-
 #countingDiv {
     width: 80%;
     margin: 0 auto;
+    padding-top: 5rem;
 }
 
-countingDiv table {
-    width:100%;
+#countingDiv table {
+    width: 100%;
     height: 400px;
 }
 
- countingDiv table, th, td {
+#countingDiv table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
@@ -250,3 +240,11 @@ countingDiv table {
     padding-top: 1.3rem;
     color: green;
 }
+
+@media only screen and (max-width: 960px) {
+    
+    .burger {
+        visibility: visible;
+    }
+            
+} /* end media query */
