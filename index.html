@@ -18,13 +18,6 @@
         <!-- header section -->
         <header>
             <div>
-<!--
-                <div class="burger" id="burgerDiv" onclick="toggleNav()">
-                    <div class="burger-line"></div>
-                    <div class="burger-line"></div>
-                    <div class="burger-line"></div>
-                </div>
--->
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -37,17 +30,27 @@
             <img src="images/ace-blur-card-game-1796794.jpg" alt="cards" />       
         </header>
         
-        <br />
         
         <!-- main section -->
        <main id="countingDiv">     
-            <h1>Definition of Counting</h1>
-            <p>
-             A subset of combinatorics that usually involves counting possibility.
-             Counting is important because it provides insights into the number of possible outcomes with respect to the number of decision.
-            </p>
-            <br> 
-            <table>
+           <h1>Definition of Counting</h1>
+           <p>
+             Counting is a subset of combinatorics that usually involves counting the possibility of certain events.
+             It is important because it provides insights into the number of possible outcomes with respect to the number of decision.
+             An efficient way of counting is necessary to handle large masses of statistical data and for an understanding of probability.
+           </p>
+           
+           <br> 
+           
+           <h1>Basic Rules of Counting</h1>
+           <p>
+            Addition and multiplication rules are used to calculate the possible outcomes of one single event(choosing one fruit once).
+	        When choosing multiple fruits or arrange the order of multiple fruits, we need to use combination or permutation, because for each individual selection or arrangement, the size of the original sample changes.
+           </p>
+           
+           <br />
+           
+            <table id="t01">
               <tr>
                 <th>Types</th>
                 <th>Definition</th>
@@ -57,30 +60,30 @@
               </tr>
               <tr>
                 <td>Addition</td>
-                <td>possibility of one outcome associated with two choices is O1 + O2</td>
-                <td>when the two sets of  choices are disjoint(not overlapping)</td>
-                <td>choose one fruit from a pile of citrus fruits and a pile of tropical fruits</td>
+                <td>possible outcomes associated with two choices is O1 + O2</td>
+                <td>the choices for one outcome are disjoint</td>
+                <td>choose a citrus fruit or a tropical fruit from a pile of fruits</td>
                 <td>"OR" operator</td>
               </tr>
               <tr>
                 <td>Multiplication</td>
-                <td>possibility of one outcome associated with two choices is O1 x O2</td>
-                <td>all sets of choices has to be applied</td>
-                <td>There are four kinds of grapes, each comes with two colors: grean or purple.Choose one grape</td>
+                <td>possible outcomes associated with two choices is O1 x O2</td>
+                <td>have to make multiple choices for one outcome</td>
+                <td>choose a grape white there are four kinds of grapes, each comes with two colors: grean or purple</td>
                 <td>"AND" operator</td>
-              </tr>
-              <tr>
-                <td>Permutation</td>
-                <td>possibility of an arrangement of multiple items</td>
-                <td>when the order of the arrangement matters</td>
-                <td>giving 10 different fruits to 10 children</td>
-                <td>-</td>
               </tr>
               <tr>
                 <td>Combination</td>
                 <td>possibility of an arrangement of multiple items</td>
                 <td>when the order doensn't matter</td>
                 <td>choosing 4 fruits out of 10 fruits</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>Permutation</td>
+                <td>possibility of an arrangement of multiple items</td>
+                <td>when the order of the arrangement matters</td>
+                <td>giving 10 different fruits to 10 children</td>
                 <td>-</td>
               </tr>
             </table>            
