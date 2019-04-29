@@ -40,6 +40,7 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: "Raleway", sans-serif;
+    font-size: 1.1rem;
     text-indent: 16px;
     letter-spacing: 2px;
 }
@@ -218,6 +219,40 @@ table#t01 th {
   color: white;
 }
 
+
+/* Formulas page */
+
+#formulaMain {
+    display: flex;
+    
+}
+
+.div1 {
+/*
+    float: left;
+    min-height: 300px;
+*/
+    width: 50%;
+}
+
+.div2 {
+/*
+    float: right;
+    min-height: 300px;
+*/
+    width: 50%;
+}
+
+
+.div1 img, .div2 img {
+    width: 90%;
+}
+
+#formulaAside {
+    position: relative;
+    top: -90px;
+}
+
 /* cardgame page */
 
 #cardGame p {
@@ -231,6 +266,27 @@ table#t01 th {
 
 #cardGame img {
     padding-bottom: 2rem;
+}
+
+.cardGames td, .cardGames th {
+    border: 1.5px solid #ddd;
+    padding: 6px;
+}
+
+.cardGames table, .cardGames th, .cardGames td {
+    border: 3px solid black;
+}
+
+.cardGames th {
+    color: green;
+}
+
+.cardGames td {
+    color: red;
+}
+
+#center {
+    color: blue;
 }
 
 /*
@@ -257,11 +313,3 @@ table#t01 th {
     font-size: 1.3rem;
     padding-top: 1.3rem;
 }
-
-@media only screen and (max-width: 960px) {
-    
-    .burger {
-        visibility: visible;
-    }
-            
-} /* end media query */
